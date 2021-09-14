@@ -1,7 +1,9 @@
 import { getGreeting } from '../support/app.po';
 
 describe('store', () => {
-  beforeEach(() => cy.visit('/'));
+  beforeEach(() =>   cy.visit(
+    '/iframe.html?id=headercomponent--primary&args=title:BoardGameHoard;'
+  ));
 
   it('should display welcome message', () => {
     // Custom command example, see `../support/commands.ts` file
@@ -10,4 +12,9 @@ describe('store', () => {
     // Function helper example, see `../support/app.po.ts` file
     getGreeting().contains('Welcome to store!');
   });
+
+  it('should show the title', () => {
+    cy.get('bg-hoard-header').contains('BoardGameHoard');
+  });
+
 });
