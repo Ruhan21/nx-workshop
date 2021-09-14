@@ -18,14 +18,7 @@ import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
             import('@bg-hoard/store/feature-game-detail').then(
               (module) => module.StoreFeatureGameDetailModule
             ),
-        },
-        {
-          path: 'store-feature-game-detail',
-          loadChildren: () =>
-            import('@bg-hoard/store/feature-game-detail').then(
-              (module) => module.StoreFeatureGameDetailModule
-            ),
-        },
+        }
       ],
       { initialNavigation: 'enabledBlocking' }
     ),
