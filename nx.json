@@ -34,7 +34,7 @@
   },
   "projects": {
     "api": {
-      "tags": ["scope:store", "type:app"]
+      "tags": ["scope:api", "type:app"]
     },
     "store": {
       "tags": ["scope:store", "type:app"]
@@ -57,7 +57,7 @@
       "tags": ["scope:store", "type:util"]
     },
     "util-interface": {
-      "tags": ["scope:store", "type:util"]
+      "tags": ["scope:shared", "type:util"]
     }
   }
 }
