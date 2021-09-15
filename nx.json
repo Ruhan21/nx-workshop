@@ -37,7 +37,7 @@
       "tags": []
     },
     "store": {
-      "tags": []
+      "tags": ["scope:store", "type:app"]
     },
     "store-e2e": {
       "tags": [],
