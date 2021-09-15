@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {getAllGames} from "../fake-api";
 import { formatRating } from '@bg-hoard/store/util-formatters';
 import {HttpClient} from "@angular/common/http";
 import {Game} from "@bg-hoard/util-interface";
@@ -11,6 +10,7 @@ import {Game} from "@bg-hoard/util-interface";
 })
 export class AppComponent {
   constructor(private http: HttpClient) {
+    console.log("component constructed!")
   }
 
   formatRating = formatRating;
